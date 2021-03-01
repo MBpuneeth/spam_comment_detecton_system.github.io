@@ -1,0 +1,120 @@
+<html>
+
+<head>
+    <style>
+        body{
+            background: linear-gradient(90deg, #1CB5E0 20%, #000851 100%);
+            font-size: 18px;
+            line-height: 30px;
+        }
+        iframe {
+            width: 1280px;
+            height: 600px;
+        }
+
+        h1 {
+            text-align: center;
+            color: yellow;
+            text-shadow: 0px 2px 2px #fff;
+        }
+        p{
+            color: white;
+        }
+        tr:nth-child(even){
+            background-color: cornflowerblue;
+        }
+        tr,td{
+            padding: 10px 30px;
+        }
+        th{
+            padding: 10px 30px;
+            color: yellow;
+            font-size: 20px;
+        }
+        h2{
+            color:red;
+            text-shadow: 1px 1px 1px #fff, 0px 0px 0px #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Data Set Classification</h1>
+    <p>
+        As an example for text classification work with 1956 comments from 5 different YouTube videos.
+        Thankfully, the authors who used this dataset in an article on spam classification made the data freely
+        available (Alberto, Lochter, and Almeida).</p>
+    <p>The comments were collected via the YouTube API from five of the ten most
+        viewed videos on YouTube in the first half of 2015. All 5 are music videos.
+        One of them is “Gangnam Style” by Korean artist Psy. The other artists were Katy Perry, LMFAO, Eminem, and
+        Shakira.</p>
+    <h2>Composition</h2>
+    <p>This corpus has been collected using the <a href="YouTube Data API v3.">YouTube Data API v3</a>
+    </p>
+    <p>
+        The samples were extracted from the comments section of five videos that were among the 10 most viewed on
+        YouTube during the collection period. The table below lists the datasets,
+        the YouTube video ID, the amount of samples in each class and the total number of samples per dataset.
+    </p>
+    <table border="1" style="margin-left: 300px;">
+        <tr>
+            <th>Dataset</th>
+            <th>YouTube ID</th>
+            <th>Spam</th>
+            <th>Ham</th>
+            <th>Total</th>
+            <!-- <th>Link</th> -->
+        </tr>
+        <tr>
+            <td>Pey</td>
+            <td>9bZkp7q19f0</td>
+            <td>175</td>
+            <td>175</td>
+            <td>350</td>
+            <!-- <td><a href="http://lasid.sor.ufscar.br/labeling/datasets/9/">download</a></td> -->
+        </tr>
+        <tr>
+            <td>KatyPerry</td>
+            <td>CevxZvSJLk8 </td>
+            <td>175</td>
+            <td>175</td>
+            <td>350</td>
+            <!-- <td><a href="/www.facebook.com">download</a></td> -->
+        </tr>
+        <tr>
+            <td>LMFAO</td>
+            <td>KQ6zr6kCPj8</td>
+            <td>236</td>
+            <td>202</td>
+            <td>438</td>
+            <!-- <td><a href="http://lasid.sor.ufscar.br/labeling/datasets/11/">download</a></td> -->
+        </tr>
+        <tr>
+            <td>Eminem</td>
+            <td>uelHwf8o7_U</td>
+            <td>245</td>
+            <td>203</td>
+            <td>448</td>
+            <!-- <td><a href="http://lasid.sor.ufscar.br/labeling/datasets/12/">download</a></td> -->
+        </tr>
+        <tr>
+            <td>Shakira</td>
+            <td>pRpeEdMmmQ0 </td>
+            <td>174</td>
+            <td>196</td>
+            <td>370</td>
+            <!-- <td><a href="http://lasid.sor.ufscar.br/labeling/datasets/13/">download</a></td> -->
+        </tr>
+    </table>
+    <h2>Usage</h2>
+    <p>The collection is composed by one CSV file per dataset, where each line has the following attributes:
+    </p>
+    <p>COMMENT_ID,AUTHOR,DATE,CONTENT,TAG</p>
+     <p> Checkout some of the comments. The comments were manually labeled as spam or legitimate. Spam was coded with a “1”
+    and legitimate comments with a “0”.</p>
+
+    <iframe
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRn28azvQcUINqzkHQUw4lZebv-lfkRFJxxWs1MhSe6rwGq-VeQyWgfm6PunbJGvN_IufrE6O1ArOLb/pubhtml?widget=true&amp;headers=false"></iframe>
+</body>
+
+</html>

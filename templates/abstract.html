@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <style>
+        .one {
+            padding: 0px 10px 20px 20px;
+            line-height: 30px;
+            font-size: 18px;
+            background: linear-gradient(90deg, #1CB5E0 20%, #000851 100%);
+        }
+
+        p,
+        li {
+            text-align: justify;
+            color: white;
+        }
+        h1 {
+            padding-top: 20px;
+			background: -webkit-linear-gradient(#eee,red);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 40px;
+		}
+        h2{
+            background: -webkit-linear-gradient(#006,#000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">
+        <h1>
+            <center>Abstract</center>
+        </h1>
+        <p>Spamming is the process of posting unwanted and not related comments on specific posts
+            in any type of social sharing medium or video sharing medium. These messages are posted
+            by bots for reducing ranking or disturbing users viewing experience which ultimately reduces
+            the rank of website and post. This spamming is done manually also which are mostly seen in
+            most competitive pages. There are few method which can remove spamming methods which use data
+            mining techniques but in this project we are automating process of spam comment detection using machine
+            learning by taking dataset of YouTube spam messages and applying CountVectorizer
+            and Naive Bayes algorithm for clustering on given data set using python programming.</p>
+        <h2>Introduction</h2>
+        <p>
+            <ul>
+                <li>Now a days there is popularity and importance of social media sites are enhanced in people’s daily
+                    life.
+                    Social media allows online users to share their feelings through posting comments. However,
+                    more and more spam comments are also being posted in user’s account on the social media. </li>
+                <li>
+                    Spamming is the process of posting unwanted and not related comments on specific posts in any
+                    type of social sharing medium or video sharing medium. These messages are posted by bots for
+                    reducing
+                    ranking or disturbing users viewing experience which ultimately reduces the rank of website and
+                    post.
+                </li>
+                <li>
+                    However, more and more spam comments are also being posted in user’s account on the social media.
+                    So necessity of spam detection is increased. In traditional system, there are different systems
+                    that are used for spam detection such as The Naive Bayes classifier and TFIDF(Term Frequency –
+                    Inverse Document Frequency). But these methods do not take the semantic information of the spam
+                    words or phrases into account, which leads to incomplete results.
+                </li>
+            </ul>
+        </p>
+        <h2> Problem Statement:</h2>
+        <p>
+            This problem is solved by detecting the spam comments posted on social media site, through a
+            combination of methods based on a deep learning model and statistical analysis. </p>
+        <h2>Existing System:</h2>
+        <p>In existing system numeric features such as new lines, punctuation marks, links, white spaces,
+            capital letters, vulgar words help eliminate incoherent and offensive comments and how the
+            topic of the comment influences the detection of spam comments.
+        </p>
+        <h4>Disadvantages:</h4>
+        <ul>
+            <li> In existing system data mining techniques are used for detecting spam messages.
+                Most of these methods works only after posting messages. There is need of system which can
+                automate this process before posting message.
+            </li>
+            <li> It do not take the semantic information of the spam words or phrases into account,
+                which leads to an incomplete results.
+            </li>
+        </ul>
+        <h2>
+            Proposed System:</h2>
+        <p>In this project CountVectorizer is used for extracting features form given dataset and design model
+            by generating test and training sets from given data. Then Naive Bayes Classifier is applied for
+            clustering and test and training set is given as input based on this data given message is tested
+            if it is spam or not.
+        </p>
+        <h3>Advantages:</h3>
+        <ul>
+            <li>As the system uses NLP it detect non English Words and spam messages which are encrypted.</li>
+            <li>The semantic analysis and Proportional weight filter technique do the complete spam selection.</li>
+        </ul>
+        <h2>Modules</h2>
+        <p><b style="color: black;">User Module:</b></p>
+        <p>User module is useful for commenting on posts and view posts and check results if spam comments
+            are posted or not.
+        </p>
+        <p><b style="color: black;">Preprocessing Module:</b></p>
+        <p>Preprocessing module contains filtering of data. Natural language processing concepts are used for
+            preprocessing of data.
+        </p>
+
+    </div>
+</body>
+
+</html>

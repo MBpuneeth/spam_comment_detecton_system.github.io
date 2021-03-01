@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <style>
+        body {
+            background: linear-gradient(90deg, #1CB5E0 20%, #000851 100%);
+        }
+
+        ul {
+            list-style-type: none;
+            overflow: hidden;
+            background-color:rgba(0,255,255,0.3);
+            
+        }
+
+        li a {
+            float: left;
+            text-decoration: none;
+            padding: 12px 16px;
+            font-size: 19px;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        #frame {
+            width: 1320px;
+            margin: 0px;
+            height: 520px;
+            border: none;
+            z-index: 1px;
+            position: absolute;
+        }
+
+        h1 {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        .head {
+            margin-top: 120px;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        a.active {
+            background-color: tomato;
+        }
+        /* a:hover{
+            background-color: palevioletred;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#" class="active" style="color: yellow;font-size:20px;">ML App</a></li>
+            <li><a href="/Homepage.html" target="_self">Home</a></li>
+            <li><a href="/abstract.html" target="sai" style="margin-left: 800px;" id="msg"onclick="active()">About</a></li>
+            <li><a href="/Dataset.html" target="sai"id="msg1" onclick="active1()">Data Set</a></li>
+            <li><a href="/home.html" target="sai" id="msg2" onclick="active2()">Testing</a></li>
+        </ul>
+    </div>
+    <iframe name="sai" id="frame"></iframe>
+    <div class="head">
+        <h1>Spam Comments Detection<br>Using Machine Learning in Python</h1>
+    </div>
+    </iframe>
+</body>
+<script>
+    function active(){
+        document.getElementById('msg').style.borderBottom="3px solid tomato"
+        document.getElementById('msg1').style.borderBottom=""
+        document.getElementById('msg2').style.borderBottom=""
+    }
+    function active1(){
+        document.getElementById('msg1').style.borderBottom="3px solid tomato"
+        document.getElementById('msg').style.borderBottom=""
+        document.getElementById('msg2').style.borderBottom=""
+    }
+    function active2(){
+        document.getElementById('msg2').style.borderBottom="3px solid tomato"
+        document.getElementById('msg1').style.borderBottom=""
+        document.getElementById('msg').style.borderBottom=""
+    }
+</script>
+</html>

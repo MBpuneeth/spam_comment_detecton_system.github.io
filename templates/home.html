@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	<style>
+		body {
+			background: linear-gradient(90deg, #1CB5E0 20%, #000851 100%);
+		}
+
+		.ml-container {
+			margin-top: 100px;
+		}
+
+		p {
+			margin-left: -180px;
+		}
+
+		form {
+			text-align: center;
+		}
+
+		input[type="submit"] {
+			background: silver;
+			padding: 2px 20px 2px 20px;
+			border-radius: 5px;
+			color: crimson;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+			font: normal 30px 'Bitter', serif;
+			box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+			border: 1px solid #257C9E;
+			font-size: 17px;
+		}
+
+		textarea {
+			padding: 6px;
+		}
+
+		input[type="submit"]:hover {
+			background: skyblue;
+			box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+		}
+
+		h1 {
+			background: -webkit-linear-gradient(#eee,red);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-size: 40px;
+		}
+
+		p {
+			color: white;
+			font-size: 18px;
+		}
+		textarea{
+			resize: none;
+		}
+		textarea:hover{
+			border: 2px solid tomato;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="ml-container">
+		<form action="{{ url_for('predict')}}" method="POST" class="form">
+			<h1>Testing</h1>
+			<p>Enter Your Comment Here</p>
+			<!-- <input type="text" name="comment"/> -->
+			<textarea name="comment" rows="4" cols="50" id="msg" placeholder="Enter your comment"></textarea>
+			<br /><br>
+			<input type="submit" class="btn-info" value="predict">
+		</form>
+	</div>
+</body>
+<script>
+</script>
+</html>
