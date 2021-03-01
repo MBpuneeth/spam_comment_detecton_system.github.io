@@ -1,5 +1,5 @@
 <?php
 
 
-Include_once("HomePage.html");
+Include_once("templates/HomePage.html");
  ?>
